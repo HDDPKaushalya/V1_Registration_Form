@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css');
+* > * {
+    font-family: "Poppins", cursive;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.App {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.register{
+    max-width: 1550px;
+    width: 100vw;
+    display:flex;
+
+
+    /* box-shadow: 1px 3px 10px #e9ecef; */
+    background-color: black;
+}
+
+
+
+#form{
+    max-width: 320px;
+    width: 100vw;
+    margin: 2em auto;
+}
+.col-1 h2{
+    font-size: 25px;
+}
+
+#form >  input, .btn{
+    border: 1px solid purple;
+    padding: .9em 1em;
+}
+
+#form > input:focus{
+    outline: none;
+}
+
+#form > .btn{
+    background-color: purple;
+    color: #e9ecef;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+    gap: 1em;
+}
+
+.flex-col{
+    flex-direction: column;
+    font-size: 10px;
+}
+
+.para .icons{
+    margin-left: -60px;
+    margin-top: 10px;
+}
+.icons i{
+    margin: 20px;
+    font-size: 25px;
+    color:white;
+    transition:all .50s ease;
+}
+.icons i:hover{
+    color: purple;
+    transform: translateY(-5px);
+}
+.para {
+    margin-left: 100px;
+}
+.col-1num .v1{
+    color: red;
+    font-size: 10px;
+}
+
+.register .col-1{
+
+    margin-left: 100px;
+    margin-right: 300px;
+
+    padding: 3em 0;
+    color: white;
+    font-size: 1px;
+}
+
+.register .col-2 img{
+    width: 780px;
+    height: 680px;
+    object-fit: fill;
+    align-self: flex-end;
+    border-left: 30px solid purple;
+
+    display: none;
+}
+
+@media screen and (min-width: 860px)  {
+    .register .col-2 img{
+        display: initial;
+    }
+}
